@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+    }
+
+    .header {
+      background-color: #fc8019;
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-buttons button {
+      margin-left: 10px;
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search-section {
+      background-color: #fc8019;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .search-section input {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 250px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #fff3e0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 200px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .categories div {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .restaurants {
+      padding: 20px;
+    }
+
+    .restaurant-cards {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+    }
+
+    .restaurant {
+      background: white;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+    }
+
+    .restaurant img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .restaurant h3 {
+      margin: 10px 0 5px;
+    }
+
+    .restaurant p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .offers {
+      margin-top: 10px;
+      color: green;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">Swiggy</div>
+    <div class="nav-buttons">
+      <button>Get the App</button>
+      <button>Sign in</button>
+    </div>
+  </div>
+
+  <div class="search-section">
+    <input type="text" placeholder="Enter your delivery location">
+    <input type="text" placeholder="Search for restaurant, item or more">
+  </div>
+
+  <div class="features">
+    <div class="card">
+      <h3>Food Delivery</h3>
+      <p>From Restaurants</p>
+      <p style="color: orange;">UPTO 60% OFF</p>
+    </div>
+    <div class="card">
+      <h3>Instamart</h3>
+      <p>Instant Grocery</p>
+      <p style="color: orange;">UPTO 60% OFF</p>
+    </div>
+    <div class="card">
+      <h3>Dineout</h3>
+      <p>Eat Out & Save More</p>
+      <p style="color: orange;">UPTO 50% OFF</p>
+    </div>
+    <div class="card">
+      <h3>Genie</h3>
+      <p>Pick-up & Drop</p>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div><img src="https://via.placeholder.com/50" alt=""> <br>Biryani</div>
+    <div><img src="https://via.placeholder.com/50" alt=""> <br>Burger</div>
+    <div><img src="https://via.placeholder.com/50" alt=""> <br>Pizza</div>
+    <div><img src="https://via.placeholder.com/50" alt=""> <br>Ice Cream</div>
+    <div><img src="https://via.placeholder.com/50" alt=""> <br>Shawarma</div>
+    <div><img src="https://via.placeholder.com/50" alt=""> <br>Rolls</div>
+  </div>
+
+  <div class="restaurants">
+    <h2>Discover best restaurants on Dineout</h2>
+    <div class="restaurant-cards">
+      <div class="restaurant">
+        <img src="https://via.placeholder.com/250x150" alt="FLO">
+        <h3>FLO</h3>
+        <p>Asian • North Indian</p>
+        <p>Church Street, Bangalore</p>
+        <div class="offers">Flat 55% off</div>
+      </div>
+      <div class="restaurant">
+        <img src="https://via.placeholder.com/250x150" alt="Cafe Noir">
+        <h3>Cafe Noir</h3>
+        <p>Continental • French</p>
+        <p>UB City, Bangalore</p>
+        <div class="offers">Flat 30% off</div>
+      </div>
+      <div class="restaurant">
+        <img src="https://via.placeholder.com/250x150" alt="Kalinga Bar">
+        <h3>Kalinga Bar</h3>
+        <p>Finger Food</p>
+        <p>Gandhi Nagar</p>
+        <div class="offers">Flat 20% off</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

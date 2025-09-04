@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - 3D Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-section {
+      width: 90%;
+      max-width: 800px;
+      padding: 2rem;
+    }
+
+    .card-container {
+      perspective: 1000px;
+    }
+
+    .animated-card {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 2rem;
+      transition: transform 0.5s ease;
+      transform-style: preserve-3d;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .animated-card:hover {
+      transform: rotateY(10deg) rotateX(10deg);
+    }
+
+    .card-content h2 {
+      font-size: 2rem;
+      color: #5db9ee;
+      margin-bottom: 1rem;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <section class="about-section">
+    <div class="card-container">
+      <div class="animated-card">
+        <div class="card-content">
+          <h2>About Me</h2>
+          <p>
+            I am an enthusiastic and self-driven fresher in the IT field, eager to learn and contribute to real-world projects. I have strong fundamentals in Java, Web Development, and Database concepts. With a passion for problem-solving and continuous learning, I am looking forward to working in a collaborative and innovative environment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
